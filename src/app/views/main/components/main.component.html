@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="header">UEFA Championship League - Standings</div>
+  <div class="cell">
+    <h3>Group A</h3>
+    <ul>
+      <li *ngFor="let item of groupA">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group B</h3>
+    <ul>
+      <li *ngFor="let item of groupB">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group C</h3>
+    <ul>
+      <li *ngFor="let item of groupC">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group D</h3>
+    <ul>
+      <li *ngFor="let item of groupD">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group E</h3>
+    <ul>
+      <li *ngFor="let item of groupE">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group F</h3>
+    <ul>
+      <li *ngFor="let item of groupF">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group G</h3>
+    <ul>
+      <li *ngFor="let item of groupG">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h3>Group H</h3>
+    <ul>
+      <li *ngFor="let item of groupH">
+        <button mat-button (click)="openDialog([item.team_id])">{{item.name}}</button>
+      </li>
+    </ul>
+  </div>
+</div>
+

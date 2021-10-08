@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-e2e",
+      "appliesTo": "e2e/",
+      "type": "launch"
+    }
+  ]
+}
