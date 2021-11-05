@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Standings } from '../../../models/standings';
 import { LeagueService } from '../../../services/league.services';
-import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { TeamsStatsDialogComponent } from '../dialog.component';
 
 @Component({
@@ -42,7 +42,7 @@ export class MainComponent implements OnInit {
       });   
   }
 
-  openDialog(teamid: number): void {
+ openDialog(teamid: number): void {
     const dialogRef = this.dialog.open(TeamsStatsDialogComponent, {
       data: { pageValue: this.getTeamStatsByTeamId(teamid.toString()) }
     });
@@ -54,6 +54,10 @@ export class MainComponent implements OnInit {
         groupArray.push(this.standings[i]);
       }
     }
+  }
+
+  getTeamIcon(teamid: number) {
+
   }
 
   getTeamStatsByTeamId(teamId: string) {

@@ -2,3 +2,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-dialog-container {
+  background: white;
+  color: black;
+}
+th {
+    font-size:small;
+}
+td{
+   text-align:center;
+}

@@ -9,12 +9,15 @@ import { BaseService } from './base.service';
 
 export class LeagueService extends BaseService {
 
+  key = "vDPon7xha5IktRrT";
+  secret = "yCMpgezxZ5CUUNQprFOOMl5XqOiUFJNe";
+
    constructor(private http: HttpClient) {
     super();
   }
 
   getStandings(): Observable<Standings[]> {
-    return this.http.get(`${this.baseUrl}/?key=HgmQU7OaOAlGREpX&secret=im5jij3jIVMCrXg9dCZ8KOjzoEfgiEdB&competition_id=244`, this.defaultReqHeader)
+    return this.http.get(`${this.baseUrl}/?key=${this.key}&secret=${this.secret}&competition_id= 244`, this.defaultReqHeader)
       .pipe(
         map((standings: Standings[]) => { return standings; }),
         catchError(this.handleError)

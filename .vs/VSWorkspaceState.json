@@ -3,14 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\material",
-    "\\src\\app\\models",
     "\\src\\app\\services",
     "\\src\\app\\views",
     "\\src\\app\\views\\main",
-    "\\src\\app\\views\\main\\components",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\views\\main\\components\\main.components.ts",
+  "SelectedNode": "\\src\\app\\services\\base.service.ts",
   "PreviewInSolutionExplorer": false
 }

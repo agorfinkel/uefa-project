@@ -1,14 +1,28 @@
-<h1 mat-dialog-title>{{data.pageValue.name}} Stats</h1>
+<h1 mat-dialog-title><img src="assets/images/{{data.pageValue.team_id}}.png">  {{data.pageValue.name}}</h1>
 <div mat-dialog-content>
-  <ul>
-    <li>Draws: {{data.pageValue.drawn}}</li>
-    <li>Goal Differential: {{data.pageValue.goal_diff}}</li>
-    <li>Conceded Goals: {{data.pageValue.goals_conceded}}</li>
-    <li>Goals Scored: {{data.pageValue.goals_scored}}</li>
-    <li>Lost: {{data.pageValue.lost}}</li>
-    <li>Matches: {{data.pageValue.matches}}</li>
-    <li>Points: {{data.pageValue.points}}</li>
-    <li>Rank: {{data.pageValue.rank}}</li>
-    <li>Won: {{data.pageValue.won}}  </li>
-  </ul>
+ <table mat-table>
+    <tr mat-row >
+      <th mat-header-cell>Draws</th>
+      <th mat-header-cell> Goal Differencial</th>
+      <th mat-header-cell>Conceded Goals</th>
+      <th mat-header-cell> Goals Scored</th>
+      <th mat-header-cell>Losses</th>
+      <th mat-header-cell>Matches</th>
+      <th mat-header-cell>Points</th>
+      <th mat-header-cell>Rank</th>
+      <th mat-header-cell>Wins</th>
+    </tr>
+    <tr mat-row>
+      <td matt-cell>{{data.pageValue.drawn}}</td>
+      <td mat-cell>{{data.pageValue.goal_diff}}</td>
+      <td mat-cell>{{data.pageValue.goals_conceded}}</td>
+      <td mat-cell>{{data.pageValue.goals_scored}}</td>
+      <td mat-cell>{{data.pageValue.lost}}</td>
+      <td mat-cell>{{data.pageValue.matches}}</td>
+      <td mat-cell>{{data.pageValue.points}}</td>
+      <td mat-cell>{{data.pageValue.rank}}</td>
+      <td mat-cell>{{data.pageValue.won}}</td>
+    </tr>
+  </table>
+
 </div>

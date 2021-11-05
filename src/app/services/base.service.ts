@@ -3,8 +3,7 @@ import { throwError } from 'rxjs';
 
 
 export class BaseService {
-  
-
+ 
   defaultReqHeader = {
     headers: {
         'X-CSRF-Header': '-',
